@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style/style.css">
+    <title>MyProfile</title>
+    <style>
+        .navbarScroll.navbarDark {
+    background-color: black;
+}
+    </style>
+</head>
+<body>
+    <script>
+        const header = document.querySelector('.navBar');
+
+        window.onscroll = function() {
+
+            var top = window.scrolly;
+            if (top >=100) {
+                header.classList.add('navbarDark');
+            }
+            else{
+                header.classList.remove('navbarDark');
+            }
+        }
+    </script>
+    <nav class="navBar">
+          <span style="margin-left:2%; font-size: 22pt; color: brown; margin-top: 1%; display: inline-block;">My Profil</span>
+           <div class="conteneur_liste_info">
+                <ul id="conteneur_liste_nav">
+                    <li><a class="nav_inf" href="#home">Home</a></li>
+                    <li><a class="nav_inf" href="#aboutMe">About me</a></li>
+                    <li><a class="nav_inf" href="#gr_conteneur">My skil</a></li>
+                    <li><a class="nav_inf" href="#myWork">My work</a></li>
+                </ul>
+            </div>
+            <div class="conteneur_liste_rs">
+                <a href="#"><img class="logo_rs_tet" src="logo/Facebook.png" alt="logo facebook"></a>
+                <a href="#cad_ski2"><img class="logo_rs_tet_li" src="logo/LinkedIn.png" alt="logo LinkedIn"></a>
+                <a href="mailto:fanetsoaina2@gmail.com"><img class="logo_rs_tet" src="logo/gmail.png" alt="logo gmail"></a>
+            </div>
+    </nav>
+    <section class="gr_cont_home" id="home">
+        <div class="conten_home">
+            <h2 style=" font-size:4.5rem; font-weight:500; ">Hi, it's me Aina</h2>
+            <p style="font-size: 2rem; margin-top: 0;">I'm still a computer science student</p>
+        </div>
+    </section>
+    <div class="bar_prof_img_nom" id="aboutMe">
+        <div class="cont_inf" style="display: flex;">
+            <div id="cont_img_prof">
+                <img id="img_prof" src="imgProfil\myProfil.jpg" alt="my profile">
+            </div>
+            <div class="info_moi">
+                <p>Nom:<span class="st_inf_me">FANOMEZANTSOA</span></p>
+                <p>Prénom:<span class="st_inf_me">Maminirina Aina Fitiavana</span></p>
+                <p>age:<span class="st_inf_me">19an</span></p>
+            </div>
+            <h3 class="hob_inf" style="margin-left: 20%;">My hobby:</h3>
+            <div class="hob_inf">
+                
+                <p>_Video Game</p>
+                <p>_Board Game</p>
+                <p>_Make a graphic design</p>
+            </div>
+        </div>
+        <p style="color: white; margin-left: 3%;">I am a person passionate about computers and technology</p>
+    </div>
+    <article id="gr_conteneur">
+        <section>
+            <h2>Parcours Superieures:</h2>
+            <span class="ti_31">ESIIA:ISPM</span>
+        </section>
+        <section>
+            <h2>My skil:</h2>
+            <fieldset class="cad_ski1">
+                <legend><span class="ti_3">in IT</span></legend>
+                    <div id="sous_2_section_1">
+                        <div class="conteneur_bloc_art">
+                            <h4 class="ti_4">Langage informatics:</h4>
+                            <div class="content_1_sous_2_section_1">
+                                <div class="box_art">
+                                    <img class="logo_lg_pt_out" src="logo/html5.png" alt="logo html"> 
+                                    <span class="nom_lang">html</span>
+                                <div class="conte_bar"><span class="style_pour_progs">25%</span><div class="bar_prog_html"> </div></div>
+                                </div>
+                                <div class="box_art">
+                                    <img class="logo_lg_pt_out" src="logo/CSS3.png" alt="logo css"><span class="nom_lang">css</span> <div class="conte_bar"><span class="style_pour_progs">20%</span><div class="bar_prog_css"> </div></div>
+                                </div>
+                                <div class="box_art">
+                                    <img class="logo_lg_pt_out" src="logo/js-logo.png" alt="logo html"> 
+                                    <span class="nom_lang">JavaScript</span>
+                                    <div class="conte_bar"><span class="style_pour_progs">1%</span><div class="bar_prog_js"> </div></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="conteneur_bloc_art" style="margin-top: 10%;">
+                            <h4 class="ti_4">Langage programmation:</h4>
+                            <div class="content_1_sous_2_section_1">
+                                <div class="box_art">
+                                <img class="logo_lg" src="logo/pascal.png" alt="logo pascal"><span class="nom_lang">pascal</span> <div class="conte_bar"><span class="style_pour_progs">15%</span><div class="bar_prog_pas"> </div></div>
+                            </div>
+                            <div class="box_art">
+                                <img class="logo_lg_pt_out" src="logo/C++.png" alt="logo c++"><span class="nom_lang">c++</span> <div class="conte_bar"><span class="style_pour_progs">1%</span><div class="bar_prog_cpp"> </div></div>
+                            </div>       
+                        </div>
+                        </div>
+                        <div class="conteneur_bloc_art">
+                            <h4 class="ti_4">Design:</h4>
+                            <div class="content_1_sous_2_section_1">
+                                <div class="box_art">
+                                    <img class="logo_lg_pt_out" src="logo/Adobe_Photoshop.png" alt="logo photoshop"><span class="nom_lang">Adobe Photoshop</span> <div class="conte_bar"><span class="style_pour_progs">15%</span><div class="bar_prog_ps"> </div></div>
+                                </div>
+                                <div class="box_art">
+                                    <img class="logo_lg" src="logo/adobe_Illustrator.png" alt="logo illustrator"><span class="nom_lang">Adobe illustrator</span> <div class="conte_bar"><span class="style_pour_progs">2%</span><div class="bar_prog_ai"> </div></div>
+                                </div>
+                                <div class="box_art">
+                                    <img class="logo_lg_pt" src="logo/Blender.png" alt="logo Blender"><span class="nom_lang">Blender</span> <div class="conte_bar"><span class="style_pour_progs">5%</span><div class="bar_prog_be"> </div></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>       
+            </fieldset>
+            <fieldset id="cad_ski2">
+               <legend> <span class="ti_3">in buisnes:</span></legend>
+            <div id="sous_section_2">
+                <div id="sous_2_section_2">
+                    <div class="box_art2">
+                        <span class="nom_lang">Negociation</span> <div class="conte_bar"><span class="style_pour_progs">15%</span><div class="bar_prog_neg"> </div></div>
+                    </div>
+                </div>
+            </div>
+            </fieldset>
+        </section>
+    </article>
+    <article class="conteneur_wk" id="myWork">
+        <section class="cont_wk">
+
+        </section>
+        <section class="cont_wk">
+
+        </section>
+        <section class="cont_wk">
+
+        </section>
+    </article>
+    </body>
+</html>
