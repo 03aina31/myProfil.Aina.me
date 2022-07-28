@@ -6,29 +6,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="style/style.css">
     <title>MyProfile</title>
-    <style>
-        .navbarScroll.navbarDark {
-    background-color: black;
-}
-    </style>
 </head>
+<script>
+    function changement(x) {
+        x.classList.toggle("change")
+    }
+    function menuCache(){
+        var y = document.getElementById(conteneur_liste_nav)
+        if (y.style.display === "block") {
+    y.style.display = "none";
+  } else {
+    y.style.display = "block";
+  }
+    }
+</script>
 <body>
-    <script>
-        const header = document.querySelector('.navBar');
-
-        window.onscroll = function() {
-
-            var top = window.scrolly;
-            if (top >=100) {
-                header.classList.add('navbarDark');
-            }
-            else{
-                header.classList.remove('navbarDark');
-            }
-        }
-    </script>
     <nav class="navBar">
-          <span style="margin-left:2%; font-size: 22pt; color: brown; margin-top: 1%; display: inline-block;">My Profil</span>
+          <span class="title_profil" >My Profil</span>
            <div class="conteneur_liste_info">
                 <ul id="conteneur_liste_nav">
                     <li><a class="nav_inf" href="#home">Home</a></li>
@@ -42,11 +36,16 @@
                 <a target="_blank" rel="noopener" href="https://www.linkedin.com/in/fanmetso-aina-47a058241/"><img class="logo_rs_tet_li" src="logo/LinkedIn.png" alt="logo LinkedIn"></a>
                 <a href="mailto:fanetsoaina2@gmail.com"><img class="logo_rs_tet" src="logo/gmail.png" alt="logo gmail"></a>
             </div>
+            <div class="menu" href="javascript:void(0);" type="button" onclick="changement(this), menuCache ()">
+                <div class="bm1"> </div>
+                <div class="bm2"> </div>
+                <div class="bm3"> </div>
+            </div>
     </nav>
     <section class="gr_cont_home" id="home">
         <div class="conten_home">
             <h2 style=" font-size:4.5rem; font-weight:700; ">Hi, it's me Aina</h2>
-            <p style="font-size: 2.5rem; margin-top: 0; margin-left: -5%; font-weight: 400;">I'm still a computer science student</p>
+            <p style="font-size: 2.5rem; margin-top: 0; margin-left: -5%; font-weight: 400;">I'm a computer science student</p>
         </div>
     </section>
     <div class="bar_prof_img_nom" id="aboutMe">

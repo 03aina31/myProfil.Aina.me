@@ -44,6 +44,13 @@ body{
 a{
     text-decoration: none;
 }
+.title_profil{
+    margin-left:2%;
+    font-size: 22pt;
+    color: brown;
+    margin-top: 1%;
+    display: inline-block;
+}
 .nav_inf{
     color: #ffffff;
 }
@@ -301,6 +308,41 @@ fieldset{
     border-radius: 10px;
     background-color: lightgrey;
 }
-@media screen and (max-width:320px) {
-    
+.menu{
+    visibility: hidden;
+}
+
+@media screen and (max-width:600px) {
+    .menu{
+        visibility: visible;
+        display: inline-block;
+        margin-top: 2%;
+        margin-left: -5%;
+        cursor: pointer;
+    }
+    .bm1, .bm2, .bm3{
+        width: 35px;
+        height: 5px;
+        margin: 6px 0;
+        background-color: rgb(247, 246, 246);
+        transition: 0.4s;
+    }
+    .title_profil{
+        width: 30%;
+        margin-top: 2%;
+    }
+    .change .bm1{
+        -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+        transform: rotate(-45deg) translate(-9px, 6px);
+    }
+    .change .bm2{
+        opacity: 0;
+    }
+    .change .bm3{
+        -webkit-transform: rotate(45deg) translate(-9px, -6px);
+        transform: rotate(45deg) translate(-9px, -6px);
+    }
+    .conteneur_liste_info, .conteneur_liste_rs{
+        visibility: hidden;
+    }
 }
