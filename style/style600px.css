@@ -1,4 +1,4 @@
-    *{
+*{
     font-family: arial;  
 }
 body{
@@ -6,60 +6,89 @@ body{
     padding: 0;
     background-color: #ffffff;
 }
+.menu{
+    cursor: pointer;
+    margin-left: 39%;
+    margin-top: 1%;
+}
+.bm1, .bm2, .bm3{
+    width: 35px;
+    height: 5px;
+    margin: 6px 0;
+    background-color: rgb(247, 246, 246);
+    transition: 0.4s;
+}
+.change .bm1{
+    -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+    transform: rotate(-45deg) translate(-9px, 6px);
+}
+.change .bm2{
+    opacity: 0;
+}
+.change .bm3{
+    -webkit-transform: rotate(45deg) translate(-9px, -6px);
+    transform: rotate(45deg) translate(-9px, -6px);
+}
 .cont_inf{
     padding-top: 3%;
-    display: flex;
 }
 .gr_cont_home{
-    height:100vh;
+    height: 86ch;
+    width: 100%;
+    overflow: hidden;
+    margin: 0;
+    z-index: 6;
+}
+.gr_cont_bg{
+    height: 900px; 
     width: 100%;
     background-image: url('AinaMe.jpg');
     background-size: cover;
     background-position: center;
-    position:relative;
     background-repeat:no-repeat;
-    padding-top: 25%;
     margin: 0;
-    display: inline-block;
+    position: relative;
     z-index: 6;
-    margin-top: 0;
 }
 .navBar{
-    
     position: -webkit-sticky; /* Safari */
     position: sticky;
-    top: 0; 
+    top: 0;
+    margin: 0;
     z-index: 5;
     width: 100%;
     height: 60px;
     background-color: rgb(41, 39, 39) ;
     display: flex;
-    overflow: hidden; 
 }
 .conten_home{
-    margin-top: -5%;
-    padding-left: 35%;
+    position: absolute;
+    top: 60%;
+    left: 25%;
     color: rgb(17, 17, 17);
     line-height: 0.5;
+    z-index: 8;
+    display: block;
 }
 .conten_home h2{
-    font-size:4.5rem;
+    font-size:3rem;
     font-weight:700;
 }
 .conten_home p{
-    font-size: 2.5rem;
-    margin-top: 0;
-    margin-left: -5%;
+    color: azure;
+    font-size: 2rem;
     font-weight: 400;
+    margin-left: -10%;
 }
 a{
     text-decoration: none;
 }
 .title_profil{
-    margin-left:2%;
+    width: 30%;
+    padding-top: 2%;
+    padding-left:2%;
     font-size: 22pt;
     color: brown;
-    margin-top: 1%;
     display: inline-block;
 }
 .nav_inf{
@@ -76,24 +105,18 @@ a{
     float: right;
 }
 .conteneur_liste_info{
-    width: 30%;
-    padding-left: 10%;
-}
-.conteneur_liste_rs a .logo_rs_tet:hover{
-    width: 45px;
-}
-.conteneur_liste_rs a .logo_rs_tet_li:hover{
-    width: 75px;
+    display: none;
+    width: 1%;
+    height: 1px;
+    position: absolute;
 }
 .conteneur_liste_rs{
-    padding-left: 10%;
-    float: right;
-    width: 30%;
-    margin-top: 2%;
+    visibility: hidden;
 }
 #conteneur_liste_nav{
     list-style-type: none;
     margin-top: 5%;
+    display: block;
 }
 #conteneur_liste_nav li{
     float: left;
@@ -109,29 +132,33 @@ a{
 }
 .bar_prof_img_nom{
     width: 100%;
-    height: 300px;
+    height: 400px;
     background: rgb(121, 122, 122);
     background: linear-gradient(0deg, rgb(13, 18, 18) 0%, rgb(60, 60, 59) 100%, rgb(55, 80, 85) 100%);
-   
+   padding-top: 5%;
 }
 .info_moi{
-    margin-left: 2%;
-    margin-top: 1%;
+    display: inline-block;
+    margin-left: 4%;
     color: white;
     font-size: 14pt;
     line-height: 1;
+    vertical-align: top;
 }
 .hob_inf{
     color: white;
     margin-top: 2%;
-    margin-left: 22% !important;
+    margin-left: 28%;
     font-size: 14pt;
 }
 .logo_ispm{
-    width: 3%;
-    margin-top: 5pt;
-    margin-left: 3%;
+    width: 8%;
+    margin-top: 1%;
+    margin-left: 8%;
     position: absolute;
+}
+.hob_inf p{
+    padding-left: 23%;
 }
 .st_inf_me{
     font-weight: 700;
@@ -141,6 +168,7 @@ a{
 #cont_img_prof{
     margin-top: 1%;
     padding-left: 2%;
+    display: inline-block;
 }
 #img_prof{
     width: 125px;
@@ -192,7 +220,7 @@ article section .ti_3{
     justify-content: space-between;
 }
 .content_1_sous_2_section_1{
-    margin-left: 1%;
+    margin-left: 7%;
     width: 90%;
     height: 250px;
     display: flex;
@@ -207,9 +235,9 @@ article section .ti_3{
 }
 .conte_bar{
     width: 30%;
-    height: 30px;
+    height: 20px;
     background-color: azure;
-    border-radius: 50px;
+    border-radius: 30px;
     margin-left: 6%;
     margin-top: 0%;
     background-position: 30%;
@@ -224,55 +252,55 @@ article section .ti_3{
 .bar_prog_html{
     background-color: rgb(9, 127, 245);
     width: 25%;
-    height: 30px;
+    height: 20px;
     border-radius: 20px 0px 0px 20px;
 }
 .bar_prog_css{
     background-color:  rgb(9, 127, 245);
     width: 20%;
-    height: 30px;
+    height: 20px;
     border-radius: 20px 0px 0px 20px;
 }
 .bar_prog_pas{
     background-color:  rgb(9, 127, 245);
     width: 15%;
-    height: 30px;
+    height: 20px;
     border-radius: 20px 0px 0px 20px;
 }
 .bar_prog_cpp{
     background-color:  rgb(9, 127, 245);
     width: 1%;
-    height: 30px;
+    height: 20px;
     border-radius: 20px 0px 0px 20px;
 }
 .bar_prog_ps{
     background-color:  rgb(9, 127, 245);
     width: 15%;
-    height: 30px;
+    height: 20px;
     border-radius: 20px 0px 0px 20px;
 }
 .bar_prog_ai{
     background-color:  rgb(9, 127, 245);
     width: 2%;
-    height: 30px;
+    height: 20px;
     border-radius: 20px 0px 0px 20px;
 }
 .bar_prog_be{
     background-color: rgb(9, 127, 245);
     width: 5%;
-    height: 30px;
+    height: 20px;
     border-radius: 20px 0px 0px 20px;
 }
 .bar_prog_js{
     background-color:  rgb(9, 127, 245);
-    width: 1%;
-    height: 30px;
+    width: 2%;
+    height: 20px;
     border-radius: 20px 0px 0px 20px;
 }
 .bar_prog_neg{
     background-color:  rgb(9, 127, 245);
     width: 15%;
-    height: 30px;
+    height: 20px;
     border-radius: 20px 0px 0px 20px;
 }
 .nom_lang{
@@ -290,23 +318,23 @@ fieldset{
     position: relative;
 }
 .cad_ski1{
-    width: 90%;
+    width: 85%;
     height: 1060px;
     background: rgb(0,33,36);
     background: linear-gradient(0deg, rgba(0,33,36,1) 0%, rgba(118,119,95,1) 100%, rgba(0,212,255,1) 100%);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    border-radius: 30px;
+    border-radius: 20px;
 }
 #cad_ski2{
-    width: 90%;
+    width: 85%;
     height: 200px;
     background-image: url(business.png);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    border-radius: 30px;
+    border-radius: 20px;
 }
 .conteneur_wk{
     width: 98%;
@@ -323,73 +351,85 @@ fieldset{
     border-radius: 10px;
     background-color: lightgrey;
 }
-.menu{
-    visibility: hidden;
-}
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 500px) {
     .title_profil{
-        width: 20%;
+        width: 40%;
     }
-    .conteneur_liste_info{
-        width: 50%;
+    .navBar{
+        height: 50px;
     }
-    .conteneur_liste_rs{
-        padding-left: 67%;
-        padding-top: 5pt;
-        position: absolute;
-    }
-    .cont_inf{
-        padding-top: 4%;
-    }
-    .gr_cont_home{
-        height: 80vh;
-    }
-    .hob_inf{
-        margin-left: 8% !important;
-    }
-    .logo_ispm{
-        width: 4%;
-        margin-top: 5pt;
-        margin-left: 5%;
+    .menu{
+        margin-left: 15%;
     }
     .conten_home{
-        padding-left: 25%;
-    }
-    .content_1_sous_2_section_1{
-        margin-left: 5%;
-    }
-}
-@media screen and (max-width:800px) {
-    .title_profil{
-        width: 20%;
-    }
-    .conteneur_liste_info{
-        width: 60%;
-        margin-left: -10%;
-    }
-    .conteneur_liste_rs{
-        padding-left: 67%;
-        padding-top: 5pt;
-        position: absolute;
-    }
-    .cont_inf{
-        padding-top: 4%;
+        visibility: hidden;
     }
     .gr_cont_home{
-        height: 60vh;
+        height: 86ch;
     }
-    .conten_home{
-        padding-left: 20%;
+    .bar_prof_img_nom{
+        height: 600px;
+    }
+    #cont_img_prof{
+        padding-left: 28%;
+    }
+    #img_prof{
+        width: 180px;
+        height: 160px;
+        border-radius: 5px; 
     }
     .logo_ispm{
-        width: 6%;
-        margin-left: 6%;
+        width: 10%;
+        margin-left: 10%;
+    }
+    .conteneur_wk{
+        display: block;
+        height: 940px;
+        padding-top: 2%;
+    }
+    .cont_wk{
+        width: 70%;
+        height: 300px;
+        margin-left: 10%;
+    }
+}
+@media screen and (max-width: 380px) {
+    .menu{
+        margin-left: 10%;
+    }
+    .logo_ispm{
+        width: 13%;
+        margin-left: 13%;
     }
     .info_moi{
+        font-size: 10pt;
+        line-height: 0.5;
+    }
+    .st_inf_me{
+        font-weight: 700;
         font-size: 12pt;
     }
-    .hob_inf{
-        margin-left: 3% !important;
-        font-size: 12pt;
+    .logo_lg_pt_out{
+        height: 50px;
+    }
+    .logo_lg{
+        height: 50px;
+    }
+    .logo_lg_pt{
+        height: 50px;
+    }
+    .cont_wk{
+        margin-left: 13%;
+    }
+    .bar_prof_img_nom{
+        height: 500px;
+    }
+}
+@media screen and (max-width: 330px) {
+    .menu{
+        margin-left: 5%;
+    }
+    .cont_wk{
+        margin-left: 15%;
     }
 }

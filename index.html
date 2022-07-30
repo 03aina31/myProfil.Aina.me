@@ -4,20 +4,13 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="style/style.css">
+    <link rel="stylesheet" type="text/css" media="screen and (min-width: 700px)" href="style/style.css">
+    <link rel="stylesheet" type="text/css" media="screen and (max-width: 699px)" href="style/style600px.css">
     <title>MyProfile</title>
 </head>
 <script>
     function changement(x) {
         x.classList.toggle("change")
-    }
-    function menuCache(){
-        var y = document.getElementById(conteneur_liste_nav)
-        if (y.style.display === "block") {
-    y.style.display = "none";
-  } else {
-    y.style.display = "block";
-  }
     }
 </script>
 <body>
@@ -36,42 +29,42 @@
                 <a target="_blank" rel="noopener" href="https://www.linkedin.com/in/fanmetso-aina-47a058241/"><img class="logo_rs_tet_li" src="logo/LinkedIn.png" alt="logo LinkedIn"></a>
                 <a href="mailto:fanetsoaina2@gmail.com"><img class="logo_rs_tet" src="logo/gmail.png" alt="logo gmail"></a>
             </div>
-            <div class="menu" href="javascript:void(0);" type="button" onclick="changement(this), menuCache ()">
+            <div class="menu" onclick="changement(this)">
                 <div class="bm1"> </div>
                 <div class="bm2"> </div>
                 <div class="bm3"> </div>
             </div>
     </nav>
     <section class="gr_cont_home" id="home">
-        <div class="conten_home">
-            <h2 style=" font-size:4.5rem; font-weight:700; ">Hi, it's me Aina</h2>
-            <p style="font-size: 2.5rem; margin-top: 0; margin-left: -5%; font-weight: 400;">I'm a computer science student</p>
-        </div>
+        <div class="gr_cont_bg"> </div>
+            <div class="conten_home">
+                <h2>Hi, it's me Aina</h2>
+                <p>I'm a computer science student</p>
+            </div>
     </section>
     <div class="bar_prof_img_nom" id="aboutMe">
-        <div class="cont_inf" style="display: flex;">
+        <div class="cont_inf">
             <div id="cont_img_prof">
                 <img id="img_prof" src="imgProfil\myProfil.jpg" alt="my profile">
             </div>
             <div class="info_moi">
-                <p>Nom:<span class="st_inf_me">FANOMEZANTSOA</span></p>
-                <p>Prénom:<span class="st_inf_me">Maminirina Aina Fitiavana</span></p>
-                <p>age:<span class="st_inf_me">19ans</span></p>
+                <p>Name:<span class="st_inf_me">FANOMEZANTSOA</span></p>
+                <p>FIRST NAME:<span class="st_inf_me">Maminirina Aina Fitiavana</span></p>
+                <p>age:<span class="st_inf_me">19old</span></p>
             </div>
-            <h3 class="hob_inf" style="margin-left: 20%;">My hobby:</h3>
+            <h3 class="hob_inf">My hobby:</h3>
             <div class="hob_inf">
-                
                 <p>_Video Game</p>
                 <p>_Board Game</p>
                 <p>_Make a graphic design</p>
             </div>
         </div>
-        <p style="color: white; margin-left: 3%;">I am a person passionate about computers and technology</p>
+        <p style="color: rgb(253, 253, 253); margin-left: 3%;">I am a person passionate about computers and technology.</p>
     </div>
     <article id="gr_conteneur">
         <section>
             <h2>Higher course:</h2>
-            <span class="ti_31">ESIIA:<b>ISPM</bold></span>
+            <span class="ti_31"><img class="logo_ispm" src="logo/ispm.png" alt="logo ispm"><b>ISPM</bold></span>
         </section>
         <section>
             <h2>My skills:</h2>
@@ -92,7 +85,7 @@
                                 <div class="box_art">
                                     <img class="logo_lg_pt_out" src="logo/js-logo.png" alt="logo html"> 
                                     <span class="nom_lang">JavaScript</span>
-                                    <div class="conte_bar"><span class="style_pour_progs">1%</span><div class="bar_prog_js"> </div></div>
+                                    <div class="conte_bar"><span class="style_pour_progs">2%</span><div class="bar_prog_js"> </div></div>
                                 </div>
                             </div>
                         </div>
@@ -125,7 +118,7 @@
             </fieldset>
             <fieldset id="cad_ski2">
                <legend> <span class="ti_3">in buisnes:</span></legend>
-            <div id="content_1_sous_2_section_1">
+            <div class="content_1_sous_2_section_1">
                     <div class="box_art">
                         <span class="nom_lang">Negociation</span> <div class="conte_bar"><span class="style_pour_progs">15%</span><div class="bar_prog_neg"> </div></div>
                     </div>
@@ -144,5 +137,8 @@
 
         </section>
     </article>
+    <section class="formulaire">
+
+    </section>
     </body>
 </html>
